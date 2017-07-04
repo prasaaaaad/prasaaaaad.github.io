@@ -1,0 +1,41 @@
+fieldset{
+	background-color: lightyellow;
+	border: 10px solid yellow;
+	margin-bottom: 10px;
+	width: 720px;
+}
+
+label{
+	width: 180px;
+	display: inline-block;
+	text-align: right;
+	text-align: top;
+}
+
+label:hover, input:hover{
+	font-size: 24px;
+}
+
+#gender, #contact{
+	width: auto;
+}
+
+textarea{
+	width: 360px;
+	height: 50px;
+}
+
+span{
+	text-align: center;
+	color: white;
+	padding: 5px;
+	margin: 5px;
+}
+
+.low{
+	background: maroon;
+}
+
+.high{
+	background: purple;
+}
