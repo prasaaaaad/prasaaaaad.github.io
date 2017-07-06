@@ -28,8 +28,10 @@ textarea{
 span{
 	text-align: center;
 	color: white;
+	display: inline-block;
 	padding: 5px;
 	margin: 5px;
+	width: 50px;
 }
 
 .low{
