@@ -9,7 +9,6 @@ function beginGame() {
 	// This script is called as soon as page is loaded
 	var randomNumber = Math.random() * 15;
 	target = Math.floor(randomNumber);
-	alert(colors[target]);
 	while (!finished) {
 		guessInputText = prompt("I am thinking of one of a color out of these:\n" + colors.join(", ") + "\nWhich one is it?");
 		guesses++;
