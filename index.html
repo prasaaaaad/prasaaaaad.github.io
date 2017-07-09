@@ -1,74 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>The Dating Site</title>
-
-	<!--CSS file is attached to main site here-->
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<title>The Color guessing game!</title>
 </head>
-<body>
+<body onload="beginGame()">
 
-	<h1>Please enter your details for our dating site!</h1>
-
-	<form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post">
-		<fieldset>
-			<legend>Your Face</legend>
-			<label for="dp">Your image: </label>
-			<input type="file" name="dp" id="dp" required="true"><br>
-			<label for="preview">Image preview: </label>
-			<img src="" id="preview">
-		</fieldset>
-
-		<fieldset>
-			<legend>Your General Details</legend>
-			<label for="name">Name: </label>
-			<input type="text" name="name" id="name" placeholder="Your full name" required="true"><br>
-			<label for="gender">Gender: </label>
-			<input type="radio" name="gender" id="gender" value="male" required="true">Male
-			<input type="radio" name="gender" id="gender" value="female">Female<br>
-			<label for="age">Age: </label>
-			<input type="number" name="age" id="age" value="18" min="18" required="true"><br>
-			<label for="dob">Date of Birth: </label>
-			<input type="date" name="dob" id="dob" required="true"><br>
-			<label for="fcolor">Favourite color: </label>
-			<input type="color" name="fcolor" id="fcolor" required="true"><br>
-			<label for="country">Which Country: </label>
-			<select id="country" required="true">
-				<option value="noselection">No selection</option>
-				<option value="china">China</option>
-				<option value="hongkong">Hong Kong</option>
-				<option value="india">India</option>
-				<option value="unitedkingdom">United Kingdom</option>
-				<option value="unitedstates">United States</option>
-			</select>
-		</fieldset>
-
-		<fieldset>
-			<legend>Your Indicators</legend>
-			<label for="height">Height: </label>
-			<span class="low">Short</span><input type="range" name="height" id="height" min="0" max="100" value="50"><span class="high">Tall</span><br>
-			<label for="salary">Salary: </label>
-			<span class="low">Poor</span><input type="range" name="salary" id="salary" min="0" max="100" value="50"><span class="high">Rich</span>
-		</fieldset>
-
-		<fieldset>
-			<legend>Your Contact Information</legend>
-			<label for="email">Email: </label>
-			<input type="email" name="email" id="email" required="true"><br>
-			<label for="mobile">Mobile: </label>
-			<input type="number" name="mobile" id="mobile"><br>
-			<label for="address">Address: </label>
-			<textarea name="address" id="address"></textarea><br>
-			<label for="contact">Method to contact you: </label>
-			<input type="checkbox" name="contact" id="contact" value="email" required="true">Email
-			<input type="checkbox" name="contact" id="contact" value="whatsapp" checked="true">Whatsapp
-			<input type="checkbox" name="contact" id="contact" value="inappchat">In-app chat
-		</fieldset>
-		<input type="submit" name="submit" value="Submit!">
-	</form>
-
-	<!--JS is attached to main site here-->
-	<script type="text/javascript" src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+	<script type="text/javascript" src="game.js"></script>
 
 </body>
 </html>
