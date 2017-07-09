@@ -25,6 +25,7 @@ function checkInput() {
 	if (guessInput == target) {
 		alert("You got it! The color was " + colors[target] + ".\n\nIt took you " + guesses + " guesses to get the number!");
 		document.body.style.backgroundColor = colors[target];
+		document.getElementById("text").innerHTML = "Thank you for playing the game!";
 		return true;
 	}
 
